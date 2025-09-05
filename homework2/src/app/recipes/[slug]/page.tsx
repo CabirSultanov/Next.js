@@ -10,7 +10,7 @@ export default function RecipePage({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   if (searchParams?.crash === "1") {
-    throw new Error("Forced crash to test error.tsx");
+    throw new Error("Forced crash to test error.tsx"); //исскуственная ошибка
   }
 
   const recipe = recipes.find((r) => r.slug === params.slug);
